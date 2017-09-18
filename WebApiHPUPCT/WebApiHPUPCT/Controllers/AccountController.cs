@@ -13,14 +13,16 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
-using WebApiHPUPCT.Models;
-using WebApiHPUPCT.Providers;
-using WebApiHPUPCT.Results;
+using com.hit.webapi.hpu.dph.Models;
+using com.hit.webapi.hpu.dph.Providers;
+using com.hit.webapi.hpu.dph.Results;
+using System.Web.Http.Description;
 
-namespace WebApiHPUPCT.Controllers
+namespace com.hit.webapi.hpu.dph.Controllers
 {
     [Authorize]
     [RoutePrefix("api/Account")]
+    [ApiExplorerSettings(IgnoreApi = true)]
     public class AccountController : ApiController
     {
         private const string LocalLoginProvider = "Local";

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace WebApiHPUPCT.Controllers
+namespace com.hit.webapi.hpu.dph.Controllers
 {
     public class HomeController : Controller
     {

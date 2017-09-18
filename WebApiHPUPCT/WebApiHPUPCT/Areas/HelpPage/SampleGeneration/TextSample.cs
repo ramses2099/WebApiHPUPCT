@@ -1,6 +1,6 @@
 using System;
 
-namespace WebApiHPUPCT.Areas.HelpPage
+namespace com.hit.webapi.hpu.dph.Areas.HelpPage
 {
     /// <summary>
     /// This represents a preformatted text sample on the help page. There's a display template named TextSample associated with this class.

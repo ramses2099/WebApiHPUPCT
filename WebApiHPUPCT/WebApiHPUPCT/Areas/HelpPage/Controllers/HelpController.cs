@@ -1,10 +1,10 @@
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using WebApiHPUPCT.Areas.HelpPage.ModelDescriptions;
-using WebApiHPUPCT.Areas.HelpPage.Models;
+using com.hit.webapi.hpu.dph.Areas.HelpPage.ModelDescriptions;
+using com.hit.webapi.hpu.dph.Areas.HelpPage.Models;
 
-namespace WebApiHPUPCT.Areas.HelpPage.Controllers
+namespace com.hit.webapi.hpu.dph.Areas.HelpPage.Controllers
 {
     /// <summary>
     /// The controller that will handle requests for the help page.

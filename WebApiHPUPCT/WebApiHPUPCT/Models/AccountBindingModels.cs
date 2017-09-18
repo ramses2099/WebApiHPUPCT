@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using Newtonsoft.Json;
 
-namespace WebApiHPUPCT.Models
+namespace com.hit.webapi.hpu.dph.Models
 {
     // Models used as parameters to AccountController actions.
 

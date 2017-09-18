@@ -1,0 +1,116 @@
+﻿
+@{
+    ViewBag.Title = "UI Test Hold And Permission";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>UI Test Hold And Permission</h2>
+
+<script lang="en" type="text/javascript">
+
+    //var url = 'http://portalhit.com.do:52780/api/HpuDph';
+
+        $(document).ready(function () {
+
+
+            $('#btnSend').click(function () {
+
+                var UnitNbr = $('#txtUnitNbr').val();
+                var Action = $('#ddlAction').val();
+                var Nota = $('#txtNota').val();
+
+                //String UnitNbr, String Action, String Nota
+
+
+                if (String(UnitNbr).length == 0 || String(Nota).length == 0) {
+                    errorAlert('Info Transaction', ' El Numero de Unidad y la Nota es Requerida');
+                    return;
+                }
+                
+                var param = { 'UnitNbr': UnitNbr, 'Action': Action, 'Nota': Nota };
+
+                var url = '../api/HpuDph';
+                
+                $.ajax({
+                    type: "POST",
+                    contentType:"application/json",
+                    data: JSON.stringify(param),
+                    url: url
+                }).done(function (data) {
+                    var status = data.Status;
+                    var message = data.Message;
+
+                    if (status == 'OK') {
+                        successAlert('Info Transaction', 'Transaction Successfull ' + message);
+                    }
+                        //
+                    $('#txtUnitNbr').val('');
+                    $('#ddlAction').val('');
+                    $('#txtNota').val('');
+
+                }).error(function (XMLHttpRequest, textStatus, erroThrown) {
+                    
+                    if (textStatus == "error") {
+                        errorAlert('Info Transaction', ' ' + XMLHttpRequest.responseText);
+                    }
+                  
+                });
+
+
+            });
+
+            return false;
+        });
+
+
+</script>
+
+
+
+<div class="row">
+    <div class="col-md-4 col-md-offset-4">
+
+        <fieldset>
+
+            <!-- Form Name -->
+            <legend>UI Test Hold And Permission</legend>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-sm-4 control-label" for="textinput">Unit Nbr:</label>
+                <div class="col-sm-8">
+                    <input type="text" id="txtUnitNbr" placeholder="Unit Nbr" class="form-control">
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-sm-4 control-label" for="textinput">Action:</label>
+                <div class="col-sm-8">
+                    <select id="ddlAction" class="form-control">
+                        <option value="CANCEL_PERMISSION">CANCEL_PERMISSION</option>
+                        <option value="GRANT_PERMISSION">GRANT_PERMISSION</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-sm-4 control-label" for="textinput">Nota:</label>
+                <div class="col-sm-8">
+                    <input type="text" id="txtNota" placeholder="Nota" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="pull-right">
+                        <button id="btnCancel" type="button" class="btn btn-default">Cancel</button>
+                        <button id="btnSend" type="button" class="btn btn-primary">Send</button>
+                    </div>
+                </div>
+            </div>
+
+        </fieldset>
+    </div>
+</div>

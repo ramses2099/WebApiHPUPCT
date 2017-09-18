@@ -1,6 +1,6 @@
 using System;
 
-namespace WebApiHPUPCT.Areas.HelpPage.ModelDescriptions
+namespace com.hit.webapi.hpu.dph.Areas.HelpPage.ModelDescriptions
 {
     /// <summary>
     /// Describes a type model.

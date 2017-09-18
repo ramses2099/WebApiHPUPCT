@@ -4,10 +4,12 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Description;
 
-namespace WebApiHPUPCT.Controllers
+namespace com.hit.webapi.hpu.dph.Controllers
 {
     [Authorize]
+    [ApiExplorerSettings(IgnoreApi =true)]
     public class ValuesController : ApiController
     {
         // GET api/values

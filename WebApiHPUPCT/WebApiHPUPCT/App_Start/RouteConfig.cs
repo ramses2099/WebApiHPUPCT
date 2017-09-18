@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace WebApiHPUPCT
+namespace com.hit.webapi.hpu.dph
 {
     public class RouteConfig
     {

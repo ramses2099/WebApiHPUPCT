@@ -9,9 +9,9 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
-using WebApiHPUPCT.Models;
+using com.hit.webapi.hpu.dph.Models;
 
-namespace WebApiHPUPCT.Providers
+namespace com.hit.webapi.hpu.dph.Providers
 {
     public class ApplicationOAuthProvider : OAuthAuthorizationServerProvider
     {

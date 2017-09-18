@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace WebApiHPUPCT.Models
+namespace com.hit.webapi.hpu.dph.Models
 {
     // Models returned by AccountController actions.
 

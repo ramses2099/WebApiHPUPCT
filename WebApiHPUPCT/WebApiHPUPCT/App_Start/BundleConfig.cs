@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace WebApiHPUPCT
+namespace com.hit.webapi.hpu.dph
 {
     public class BundleConfig
     {

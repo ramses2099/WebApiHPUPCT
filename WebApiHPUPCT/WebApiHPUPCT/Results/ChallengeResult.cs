@@ -7,7 +7,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Web.Http;
 
-namespace WebApiHPUPCT.Results
+namespace com.hit.webapi.hpu.dph.Results
 {
     public class ChallengeResult : IHttpActionResult
     {

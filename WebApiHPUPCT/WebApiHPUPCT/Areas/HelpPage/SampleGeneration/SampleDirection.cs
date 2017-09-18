@@ -1,4 +1,4 @@
-namespace WebApiHPUPCT.Areas.HelpPage
+namespace com.hit.webapi.hpu.dph.Areas.HelpPage
 {
     /// <summary>
     /// Indicates whether the sample is used for request or response

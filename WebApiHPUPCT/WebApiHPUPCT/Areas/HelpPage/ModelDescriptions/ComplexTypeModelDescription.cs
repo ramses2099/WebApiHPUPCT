@@ -1,6 +1,6 @@
 using System.Collections.ObjectModel;
 
-namespace WebApiHPUPCT.Areas.HelpPage.ModelDescriptions
+namespace com.hit.webapi.hpu.dph.Areas.HelpPage.ModelDescriptions
 {
     public class ComplexTypeModelDescription : ModelDescription
     {

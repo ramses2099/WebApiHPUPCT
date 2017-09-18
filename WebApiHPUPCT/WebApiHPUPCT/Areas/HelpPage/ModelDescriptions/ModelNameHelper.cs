@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Linq;
 using System.Reflection;
 
-namespace WebApiHPUPCT.Areas.HelpPage.ModelDescriptions
+namespace com.hit.webapi.hpu.dph.Areas.HelpPage.ModelDescriptions
 {
     internal static class ModelNameHelper
     {

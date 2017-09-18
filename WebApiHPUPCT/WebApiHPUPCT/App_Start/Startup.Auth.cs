@@ -8,10 +8,10 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
-using WebApiHPUPCT.Providers;
-using WebApiHPUPCT.Models;
+using com.hit.webapi.hpu.dph.Providers;
+using com.hit.webapi.hpu.dph.Models;
 
-namespace WebApiHPUPCT
+namespace com.hit.webapi.hpu.dph
 {
     public partial class Startup
     {
