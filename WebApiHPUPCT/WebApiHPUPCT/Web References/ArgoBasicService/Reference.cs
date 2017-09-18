@@ -13,7 +13,7 @@
 // 
 #pragma warning disable 1591
 
-namespace com.hit.webapi.hpu.dph.ArgoBasicService {
+namespace WebApiHPUPCT.ArgoBasicService {
     using System;
     using System.Web.Services;
     using System.Diagnostics;
@@ -23,7 +23,7 @@ namespace com.hit.webapi.hpu.dph.ArgoBasicService {
     
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1099.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2046.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Web.Services.WebServiceBindingAttribute(Name="ArgoServiceSoapBinding", Namespace="http://www.navis.com/services/argoservice")]
@@ -35,7 +35,7 @@ namespace com.hit.webapi.hpu.dph.ArgoBasicService {
         
         /// <remarks/>
         public ArgoService() {
-            this.Url = global::com.hit.webapi.hpu.dph.Properties.Settings.Default.com_hit_webapi_hpu_dph_ArgoBasicService_ArgoService;
+            this.Url = global::WebApiHPUPCT.Properties.Settings.Default.WebApiHPUPCT_ArgoBasicService_ArgoService;
             if ((this.IsLocalFileSystemWebService(this.Url) == true)) {
                 this.UseDefaultCredentials = true;
                 this.useDefaultCredentialsSetExplicitly = false;
@@ -404,11 +404,11 @@ namespace com.hit.webapi.hpu.dph.ArgoBasicService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1099.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2046.0")]
     public delegate void genericInvokeCompletedEventHandler(object sender, genericInvokeCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1099.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2046.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class genericInvokeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {

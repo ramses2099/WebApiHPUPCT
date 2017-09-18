@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace com.hit.webapi.hpu.dph.Properties {
+namespace WebApiHPUPCT.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -30,6 +30,16 @@ namespace com.hit.webapi.hpu.dph.Properties {
         public string com_hit_webapi_hpu_dph_ArgoBasicService_ArgoService {
             get {
                 return ((string)(this["com_hit_webapi_hpu_dph_ArgoBasicService_ArgoService"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://testn41nodes:9080/apex/services/argoservice")]
+        public string WebApiHPUPCT_ArgoBasicService_ArgoService {
+            get {
+                return ((string)(this["WebApiHPUPCT_ArgoBasicService_ArgoService"]));
             }
         }
     }

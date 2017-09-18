@@ -48,7 +48,7 @@ Argo Services </wsdl:documentation>
   </wsdl:binding>
   <wsdl:service name="ArgoService">
     <wsdl:port name="ArgoServicePort" binding="tns:ArgoServiceSoapBinding">
-      <soap:address location="http://172.16.0.53:9080/apex/services/argoservice" />
+      <soap:address location="http://testn41nodes:9080/apex/services/argoservice" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>
